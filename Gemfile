@@ -5,8 +5,8 @@ gem 'rails', '4.0.0'
 gem 'pg'
 gem 'thin'
 gem 'rails-timeago'
-gem 'compass-rails'
-gem 'zurb-foundation'
+gem 'compass-rails', github: "milgner/compass-rails", ref: "1749c06f15dc4b058427e7969810457213647fb8"
+gem 'zurb-foundation', '~> 4.0.0'
 
 group :development, :test do
   gem 'rspec-rails'

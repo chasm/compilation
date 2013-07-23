@@ -8,6 +8,8 @@ Compilation::Application.routes.draw do
   delete "logout" => "session#destroy"
   get "logout" => "session#destroy"
   
+  get "register" => "users#new", as: :register
+  
   resources :users
   
   root 'songs#index'
