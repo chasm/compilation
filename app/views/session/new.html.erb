@@ -1,2 +1,7 @@
 <h1>Please log in</h1>
-<p>Login form goes here</p>
+
+<%= form_for :user, url: login_path, method: :post, html: { class: "login", id: "login_form" } do |f| %>
+  <%= f.text_field :email, placeholder: "Email address" %>
+  <%= f.password_field :password, placeholder: "Password" %>
+  <%= f.submit "Log in" %>
+<% end %>
